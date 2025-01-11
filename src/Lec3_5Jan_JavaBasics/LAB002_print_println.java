@@ -7,5 +7,6 @@ public class LAB002_print_println {
         System.out.println("two");
         System.out.print("three");
         System.out.print("four");
+        System.out.print("five");
     }
 }
