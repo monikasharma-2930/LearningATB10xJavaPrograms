@@ -17,5 +17,6 @@ public class Task1_PositiveNegative {
         }else{
             System.out.println("Enetered number is not integer");
         }
+        sc.close();
     }
 }
