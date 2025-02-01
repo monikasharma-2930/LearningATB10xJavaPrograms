@@ -2,7 +2,7 @@ package Task30Jan;
 
 import java.util.Scanner;
 
-public class Task9_CheckGradesOfMarks {
+public class Task10_CheckGradesOfMarks {
     public static void main(String[] args) {
         float marks;
         Scanner sc = new Scanner(System.in);
