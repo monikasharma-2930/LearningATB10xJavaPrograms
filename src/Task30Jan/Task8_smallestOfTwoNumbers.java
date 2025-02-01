@@ -2,7 +2,7 @@ package Task30Jan;
 
 import java.util.Scanner;
 
-public class Task7_smallestOfTwoNumbers {
+public class Task8_smallestOfTwoNumbers {
     public static void main(String[] args) {
         int num1 = 0;
         int num2 = 0;
