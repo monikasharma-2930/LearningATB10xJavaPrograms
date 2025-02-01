@@ -2,7 +2,7 @@ package Task30Jan;
 
 import java.util.Scanner;
 
-public class Task8_CheckLeapYear {
+public class Task9_CheckLeapYear {
     public static void main(String[] args) {
         int year;
         Scanner sc = new Scanner(System.in);
