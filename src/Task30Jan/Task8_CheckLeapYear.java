@@ -10,9 +10,9 @@ public class Task8_CheckLeapYear {
         if (sc.hasNextInt()){
             year = sc.nextInt();
             if(year % 4 == 0 )
-                System.out.println("Enetered year is a leap year");
+                System.out.println("Entered year is a leap year");
             else
-                System.out.println("Enetered year is NOT a leap year");
+                System.out.println("Entered year is NOT a leap year");
         }else{
             System.out.println("Enter leap year");
             System.exit(0);
