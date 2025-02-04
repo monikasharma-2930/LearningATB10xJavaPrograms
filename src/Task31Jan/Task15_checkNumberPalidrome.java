@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task15_checkNumberPalidrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num5
+        int num;
         int reverseNum = 0;
         System.out.println("Enter the number:");
         if(sc.hasNextInt()){
