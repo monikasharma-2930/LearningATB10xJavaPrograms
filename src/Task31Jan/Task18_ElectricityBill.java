@@ -10,7 +10,7 @@ public class Task18_ElectricityBill {
         double rate;
         System.out.println("Enter units");
         if(sc.hasNextDouble()){
-            units = sc.nextInt();
+            units = sc.nextDouble();
             if(units>0){
                 int i=1;
                 while(units>0){
