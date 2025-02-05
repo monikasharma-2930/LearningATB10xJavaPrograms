@@ -5,21 +5,19 @@ import java.util.Scanner;
 public class Task17_checkLoanEligibility {
     public static void main(String[] args) {
          int age;
+         String error="";
          Scanner sc = new Scanner(System.in);
          System.out.println("Enter Age: ");
          if(sc.hasNextInt()){
              age = sc.nextInt();
              if (age < 0) {
-                 System.out.println("Entered age is invalid");
-                 System.exit(0);
+                 error = "Entered age is invalid\n";
              }
              else if(age<18) {
-                 System.out.println("Age can not be less than 18 years");
-                 System.exit(0);
+                 error = "Age can not be less than 18 years\n";
              }
              else if(age>80) {
-                 System.out.println("Age can not be more than 80 years");
-                 System.exit(0);
+                 error = "Age can not be more than 80 years\n";
              }
          }else {
              System.out.println("Enter age in years(numbers)");
@@ -32,14 +30,13 @@ public class Task17_checkLoanEligibility {
          if(sc1.hasNextLong()){
              salary = sc1.nextLong();
              if(salary < 0 ){
-                 System.out.println("Salary can not be negative number");
-                 System.exit(0);
+                 error += "Salary can not be a negative number\n";
              }else if(salary<10000){
-                 System.out.println("Salary can not be less than 10000");
-                 System.exit(0);
+                 error += "Salary can not be less than 10000\n";
              }
          }else{
              System.out.println("Entered salary is not valid");
+             System.exit(0);
          }
 
         Scanner sc2 = new Scanner(System.in);
@@ -48,16 +45,20 @@ public class Task17_checkLoanEligibility {
         if(sc2.hasNextLong()){
             score = sc2.nextInt();
             if(score < 0 ){
-                System.out.println("Credit Score can not be negative number");
-                System.exit(0);
+                error += "Credit Score can not be negative number";
             }else if(score<500){
-                System.out.println("Credit score should be greater than 500");
-                System.exit(0);
+                error += "Credit score should be greater than 500";
             }
         }else{
-            System.out.println("Entered salary is not valid");
+            System.out.println("Entered credit score is not valid");
+            System.exit(0);
         }
-
-        System.out.println("Congratulations!!! You are eligible for loan");
+        if(error.trim().isEmpty()){
+            System.out.println(error);
+            System.out.println("Congratulations!!! You are eligible for loan");
+        }
+        else {
+            System.out.println("Sorry!!! You are eligible for loan because: \n"+error);
+        }
     }
 }
