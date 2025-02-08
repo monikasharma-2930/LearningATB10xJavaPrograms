@@ -31,5 +31,6 @@ public class Task21_checkTravelEligibility {
             System.out.println("You are eligible to travel");
         else
             System.out.println("You are not eligible for travel");
+
     }
 }
