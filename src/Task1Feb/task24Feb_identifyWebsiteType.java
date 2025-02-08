@@ -2,7 +2,7 @@ package Task1Feb;
 
 import java.util.Scanner;
 
-public class task25Feb_identifyWebsiteType {
+public class task24Feb_identifyWebsiteType {
     public static void main(String[] args) {
         String url,msg;
         String domain="";
