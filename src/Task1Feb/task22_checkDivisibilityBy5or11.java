@@ -2,7 +2,7 @@ package Task1Feb;
 
 import java.util.Scanner;
 
-public class task23_checkDivisibilityBy5or11 {
+public class task22_checkDivisibilityBy5or11 {
     public static void main(String[] args) {
         int num;
         Scanner sc = new Scanner(System.in);
