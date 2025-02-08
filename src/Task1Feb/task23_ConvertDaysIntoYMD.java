@@ -2,7 +2,7 @@ package Task1Feb;
 
 import java.util.Scanner;
 
-public class task24_ConvertDaysIntoYMD {
+public class task23_ConvertDaysIntoYMD {
     public static void main(String[] args) {
         int enteredDays, years, months, remainingDays;
         Scanner sc = new Scanner(System.in);
